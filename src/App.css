@@ -9,7 +9,6 @@ button:focus{ outline: none;box-shadow:none;}
 @media screen and (max-width:1250px) {
 .typeSearch { font-size: 40px; }
 .searchBoxCont p { font-size: 18px; line-height: 25px }
-.cardSec .card{max-width: 30%;min-width: 30%; }
 }
 
 @media screen and (max-width:767px) and (orientation:portrait) {
