@@ -1,19 +1,9 @@
 import React from 'react';
 import { Grid, Image, Card, Button } from 'semantic-ui-react';
-import TimeAgo from 'javascript-time-ago'
-
-// Load locale-specific relative date/time formatting rules.
-import en from 'javascript-time-ago/locale/en'
 
 function Cardcontent(props) {
 
     let cards = props.cards;
-
-    // Add locale-specific relative date/time formatting rules.
-    TimeAgo.addLocale(en)
-
-    // Create relative date/time formatter.
-    const timeAgo = new TimeAgo('en-US')
 
     const WheatherCards = cards.map((card, index) =>
         <Card key={index}>
@@ -31,7 +21,7 @@ function Cardcontent(props) {
                 <br />
                 <Card.Meta>
                     {new Intl.DateTimeFormat('en-GB', {
-                        day:'numeric', month: 'short', year: 'numeric', hour: 'numeric', minute: 'numeric', hour12: true
+                        day: 'numeric', month: 'short', year: 'numeric', hour: 'numeric', minute: 'numeric', hour12: true
                     }).format(new Date(card.dt * 1000))}
                 </Card.Meta>
             </Card.Content>

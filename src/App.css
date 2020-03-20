@@ -1,4 +1,3 @@
-button:focus{ outline: none;box-shadow:none;}
 .WheatherApp{ height:100%;background: linear-gradient(121deg, rgba(180,236,80,1) 0%, rgba(96,170,230,1) 35%, rgba(90,154,223,1) 43%, rgba(49,36,174,1) 100%);}
 .OpenWheather { position: relative; width: 100%; height: 100%;  overflow-y: auto;  color: #ffffff;  overflow-x: hidden;}
 .logo{ font-size: 20px;}
