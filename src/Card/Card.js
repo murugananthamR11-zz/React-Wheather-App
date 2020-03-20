@@ -30,8 +30,9 @@ function Cardcontent(props) {
                 </Card.Description>
                 <br />
                 <Card.Meta>
-                  {timeAgo.format(card.dt * 1000)}
-                  {/* 1584680486 */}
+                    {new Intl.DateTimeFormat('en-GB', {
+                        day:'numeric', month: 'short', year: 'numeric', hour: 'numeric', minute: 'numeric', hour12: true
+                    }).format(new Date(card.dt * 1000))}
                 </Card.Meta>
             </Card.Content>
             <Card.Content extra>

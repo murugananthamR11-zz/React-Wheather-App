@@ -105,10 +105,10 @@ class Wheather extends Component {
                     <Grid.Column floated='left' verticalAlign='middle' className='logo' width={6}>
                         WHEATHER
                     </Grid.Column>
-                    <Grid.Column floated='right' width={4}>
+                    <Grid.Column floated='right' width={6}>
                         <Form>
-                            <Form.Field>
-                                <Input size='large' width='100%' action={{ icon: 'search', color: 'green', onClick: () => this.onSearchHandler() }} placeholder='Search...' value={this.state.searchValue} onChange={this.handleSearch} />
+                            <Form.Field className="searchField" >
+                                <Input size='large'  action={{ icon: 'search', color: 'green', onClick: () => this.onSearchHandler() }} placeholder='Search...' value={this.state.searchValue} onChange={this.handleSearch} />
                             </Form.Field>
                         </Form>
                     </Grid.Column>
