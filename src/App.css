@@ -1,0 +1,31 @@
+button:focus{ outline: none;box-shadow:none;}
+.WheatherApp{ height:100%;background: linear-gradient(121deg, rgba(180,236,80,1) 0%, rgba(96,170,230,1) 35%, rgba(90,154,223,1) 43%, rgba(49,36,174,1) 100%);}
+.OpenWheather { position: relative; width: 100%; height: 100%;  overflow-y: auto;  color: #ffffff;  overflow-x: hidden;}
+.logo{ font-size: 20px;}
+.searchBoxCont { width: 80%; margin: auto ;margin-top: 15% !important;}
+.searchBoxCont p { font-size: 25px; color: #ffffff; line-height: 35px; }
+.ui.modal>.centerdActionbtn{ text-align: center !important;}
+
+@media screen and (max-width:1250px) {
+.typeSearch { font-size: 40px; }
+.searchBoxCont p { font-size: 18px; line-height: 25px }
+.cardSec .card{max-width: 30%;min-width: 30%; }
+}
+
+@media screen and (max-width:767px) and (orientation:portrait) {
+.logo { text-align: center }
+.searchBox { justify-content: center; margin-top: 10px; }
+.searchBoxCont { width: 100%; }
+.typeSearch { font-size: 20px; }
+.typeSearch img { height: 20px; }
+.searchBoxCont p { font-size: 14px; line-height: normal }
+.CardWrap .ui.cards{ justify-content: center;}
+}
+
+@media screen and (max-width:767px) and (orientation:landscape) {
+.logo { text-align: center }
+.typeSection { margin-top:3%; }
+.typeSearch { font-size: 30px; }
+.typeSearch img { height: 20px; }
+.searchBoxCont p { font-size: 16px; line-height: normal }
+}
