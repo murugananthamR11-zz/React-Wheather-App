@@ -20,6 +20,9 @@
 .typeSearch img { height: 20px; }
 .searchBoxCont p { font-size: 14px; line-height: normal }
 .CardWrap .ui.cards{ justify-content: center;}
+.searchField {
+    text-align: center;
+}
 }
 
 @media screen and (max-width:767px) and (orientation:landscape) {
@@ -28,4 +31,8 @@
 .typeSearch { font-size: 30px; }
 .typeSearch img { height: 20px; }
 .searchBoxCont p { font-size: 16px; line-height: normal }
+.CardWrap .ui.cards{ justify-content: center;}
+.searchField {
+    text-align: center;
+}
 }
